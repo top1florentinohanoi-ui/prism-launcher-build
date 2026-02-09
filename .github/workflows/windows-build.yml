@@ -20,6 +20,9 @@ jobs:
 
       - name: Setup CMake
         uses: lukka/get-cmake@v3.29.3
+        
+      - name: Install ECM (Extra CMake Modules)
+        run: choco install extra-cmake-modules -y
 
       - name: Install NSIS
         run: choco install nsis -y
